@@ -1,0 +1,14 @@
+hash: 8dd9fb7e29935c966732086a982c967a91335ef25efe483935f4420f2127b57a
+updated: 2016-03-09T22:36:50.112389029-05:00
+imports:
+- name: github.com/gorilla/context
+  version: 1ea25387ff6f684839d82767c1733ff4d4d15d0a
+- name: github.com/gorilla/handlers
+  version: ee54c7b44cab12289237fb8631314790076e728b
+- name: github.com/gorilla/mux
+  version: acf3be1b335c8ce30b2c8d51300984666f0ceefa
+- name: github.com/oschwald/geoip2-golang
+  version: ac55b72a85f5967224eb9d31d445a149e1508b16
+- name: github.com/oschwald/maxminddb-golang
+  version: 4b71dbb05875d304c473eb928ea22132a062fcb3
+devImports: []

@@ -1,0 +1,5 @@
+package: go-geoip2-httpd
+import:
+- package: github.com/gorilla/handlers
+- package: github.com/gorilla/mux
+- package: github.com/oschwald/geoip2-golang
