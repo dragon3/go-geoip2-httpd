@@ -15,8 +15,6 @@ import (
 var db *geoip2.Reader
 
 func main() {
-	log.Println("Starting go-geoip2-server...")
-
 	var mmdb, port string
 	flag.StringVar(&mmdb, "mmdb", "", "Path to MaxMind database file")
 	flag.StringVar(&port, "port", "9000", "Port number for HTTP server")
@@ -32,6 +30,10 @@ func main() {
 	}
 	db = _db
 	defer db.Close()
+
+	log.Println("Starting go-geoip2-server...")
+	log.Printf("mmdb=%s", mmdb)
+	log.Printf("port=%s", port)
 
 	r := mux.NewRouter()
 	r.HandleFunc("/{ip}", handler)
